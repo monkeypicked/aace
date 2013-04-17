@@ -1,0 +1,48 @@
+\name{prdce}
+\alias{prdce}
+\title{portfolio risk decomposition}
+\usage{
+  prdce(x = getce(), po = poce(x), scaletovol = FALSE,
+    security = FALSE)
+}
+\arguments{
+  \item{x}{object of class ce}
+
+  \item{po}{column matrix of portfolio weights with
+  rownames=identifiers}
+
+  \item{scaletovol}{flag : scale variance contributions by
+  1/sqrt(total variance), so 'units of variance are
+  rescaled to add up to portfolio vol'}
+
+  \item{security}{flags use of variance only}
+}
+\value{
+  identifiers : matrix, rows are securities, columns are
+  M=Market, S=Systematic, R=Residual, TOT=total, F1=factor1
+  vol
+}
+\description{
+  portfolio risk decomposition
+}
+\section{Details}{
+
+}
+\author{
+  Giles Heywood
+}
+\seealso{
+  Other extractors: \code{\link{buice}},
+  \code{\link{devce}}, \code{\link{face}},
+  \code{\link{fmpce}}, \code{\link{fulce}},
+  \code{\link{genfrdce}}, \code{\link{ldgce}},
+  \code{\link{ldggmace}}, \code{\link{metce}},
+  \code{\link{mktce}}, \code{\link{msce}},
+  \code{\link{msrtce}}, \code{\link{quace}},
+  \code{\link{resce}}, \code{\link{scoce}},
+  \code{\link{sdvce}}, \code{\link{spvce}},
+  \code{\link{stce}}, \code{\link{sysce}},
+  \code{\link{unqce}}, \code{\link{vcvce}},
+  \code{\link{vfuce}}
+}
+

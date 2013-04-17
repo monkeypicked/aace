@@ -1,0 +1,45 @@
+\name{vcvce}
+\alias{vcvce}
+\title{extractor for covariance matrix}
+\usage{
+  vcvce(x, out = c("M", "S", "R", "T"),
+    units = c("variance", "correlation"), po = buice(x))
+}
+\arguments{
+  \item{x}{object of class ce}
+
+  \item{out}{component to return: M=factor1, S=factors 2:k,
+  R=residual, T=M+S+R}
+
+  \item{units}{variance or correlation}
+
+  \item{po}{row/column identifiers}
+}
+\value{
+  named list of the components specified in argument: out
+}
+\description{
+  extractor for covariance matrix
+}
+\section{Details}{
+  po is a vector of identifiers, a subset of the original
+  data columnames
+}
+\author{
+  Giles Heywood
+}
+\seealso{
+  Other extractors: \code{\link{buice}},
+  \code{\link{devce}}, \code{\link{face}},
+  \code{\link{fmpce}}, \code{\link{fulce}},
+  \code{\link{genfrdce}}, \code{\link{ldgce}},
+  \code{\link{ldggmace}}, \code{\link{metce}},
+  \code{\link{mktce}}, \code{\link{msce}},
+  \code{\link{msrtce}}, \code{\link{prdce}},
+  \code{\link{quace}}, \code{\link{resce}},
+  \code{\link{scoce}}, \code{\link{sdvce}},
+  \code{\link{spvce}}, \code{\link{stce}},
+  \code{\link{sysce}}, \code{\link{unqce}},
+  \code{\link{vfuce}}
+}
+

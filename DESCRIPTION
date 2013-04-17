@@ -1,0 +1,11 @@
+Package: aace
+Type: Package
+Title: Covariance estimation
+Version: 1.0
+Date: 2013-04-16
+Author: Giles Heywood
+Maintainer: <giles.heywood@gmail.com>
+Description: Covariance estimation using modified PCA, based on BurStFin
+License: GPL (>=2)
+Collate:
+    'ce.R'

@@ -1,0 +1,37 @@
+\name{vfuce}
+\alias{vfuce}
+\title{convenience wrapper on vcvce(x)$T -the total covariance estimate for columns with full history}
+\usage{
+  vfuce(x)
+}
+\arguments{
+  \item{x}{object of class ce}
+}
+\value{
+  VCV matrix
+}
+\description{
+  convenience wrapper on vcvce(x)$T -the total covariance
+  estimate for columns with full history
+}
+\section{Details}{
+
+}
+\author{
+  Giles Heywood
+}
+\seealso{
+  Other extractors: \code{\link{buice}},
+  \code{\link{devce}}, \code{\link{face}},
+  \code{\link{fmpce}}, \code{\link{fulce}},
+  \code{\link{genfrdce}}, \code{\link{ldgce}},
+  \code{\link{ldggmace}}, \code{\link{metce}},
+  \code{\link{mktce}}, \code{\link{msce}},
+  \code{\link{msrtce}}, \code{\link{prdce}},
+  \code{\link{quace}}, \code{\link{resce}},
+  \code{\link{scoce}}, \code{\link{sdvce}},
+  \code{\link{spvce}}, \code{\link{stce}},
+  \code{\link{sysce}}, \code{\link{unqce}},
+  \code{\link{vcvce}}
+}
+

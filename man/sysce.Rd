@@ -1,0 +1,39 @@
+\name{sysce}
+\alias{sysce}
+\title{extractor for systematic component of return (factors 2:k)}
+\usage{
+  sysce(x, ret)
+}
+\arguments{
+  \item{x}{object of class ce}
+
+  \item{ret}{returns matrix}
+}
+\value{
+  matrix of attributed return
+}
+\description{
+  extractor for systematic component of return (factors
+  2:k)
+}
+\section{Details}{
+
+}
+\author{
+  Giles Heywood
+}
+\seealso{
+  Other extractors: \code{\link{buice}},
+  \code{\link{devce}}, \code{\link{face}},
+  \code{\link{fmpce}}, \code{\link{fulce}},
+  \code{\link{genfrdce}}, \code{\link{ldgce}},
+  \code{\link{ldggmace}}, \code{\link{metce}},
+  \code{\link{mktce}}, \code{\link{msce}},
+  \code{\link{msrtce}}, \code{\link{prdce}},
+  \code{\link{quace}}, \code{\link{resce}},
+  \code{\link{scoce}}, \code{\link{sdvce}},
+  \code{\link{spvce}}, \code{\link{stce}},
+  \code{\link{unqce}}, \code{\link{vcvce}},
+  \code{\link{vfuce}}
+}
+
