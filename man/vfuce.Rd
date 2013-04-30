@@ -1,6 +1,6 @@
 \name{vfuce}
 \alias{vfuce}
-\title{convenience wrapper on vcvce(x)$T -the total covariance estimate for columns with full history}
+\title{Convenience wrapper on vcvce(x)$T -the total covariance estimate for columns with full history}
 \usage{
   vfuce(x)
 }
@@ -11,7 +11,7 @@
   VCV matrix
 }
 \description{
-  convenience wrapper on vcvce(x)$T -the total covariance
+  Convenience wrapper on vcvce(x)$T -the total covariance
   estimate for columns with full history
 }
 \section{Details}{

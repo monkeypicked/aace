@@ -1,6 +1,6 @@
 \name{unqce}
 \alias{unqce}
-\title{uniqueness}
+\title{Extractor for uniqueness}
 \usage{
   unqce(x)
 }
@@ -8,7 +8,7 @@
   \item{x}{object of class ce}
 }
 \description{
-  uniqueness
+  Extractor for uniqueness
 }
 \section{Details}{
 

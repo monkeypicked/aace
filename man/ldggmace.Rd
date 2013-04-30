@@ -1,6 +1,6 @@
 \name{ldggmace}
 \alias{ldggmace}
-\title{extractor for loadings * fmp, (colnames=T, rownames=T)}
+\title{Extractor for loadings * fmp, (colnames=T, rownames=T)}
 \usage{
   ldggmace(x)
 }
@@ -11,7 +11,7 @@
   named list(M,S,R)
 }
 \description{
-  extractor for loadings * fmp, (colnames=T, rownames=T)
+  Extractor for loadings * fmp, (colnames=T, rownames=T)
 }
 \section{Details}{
 

@@ -1,6 +1,6 @@
 \name{resce}
 \alias{resce}
-\title{residual return}
+\title{Residual return}
 \usage{
   resce(x, ret)
 }
@@ -13,7 +13,7 @@
   residuals
 }
 \description{
-  residual return
+  Residual return
 }
 \section{Details}{
 

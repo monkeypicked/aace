@@ -1,6 +1,6 @@
 \name{fmpce}
 \alias{fmpce}
-\title{factor mimicking portfolio weights (but still in reduced dimension ie non-NA columns only)}
+\title{Factor mimicking portfolio weights (but still in reduced dimension ie non-NA columns only)}
 \usage{
   fmpce(x, type = c("fmp", "hpl"))
 }
@@ -13,7 +13,7 @@
   matrix
 }
 \description{
-  factor mimicking portfolio weights (but still in reduced
+  Factor mimicking portfolio weights (but still in reduced
   dimension ie non-NA columns only)
 }
 \section{Details}{

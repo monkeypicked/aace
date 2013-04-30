@@ -1,6 +1,6 @@
 \name{spvce}
 \alias{spvce}
-\title{specific vol}
+\title{Extractor for pecific vol}
 \usage{
   spvce(x)
 }
@@ -11,7 +11,7 @@
   specific vol
 }
 \description{
-  specific vol
+  Extractor for pecific vol
 }
 \section{Details}{
 

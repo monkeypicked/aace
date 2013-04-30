@@ -1,6 +1,6 @@
 \name{quace}
 \alias{quace}
-\title{extractor for score on quadratic component}
+\title{Extractor for score on quadratic component}
 \usage{
   quace(x, ret)
 }
@@ -13,7 +13,7 @@
   matrix
 }
 \description{
-  extractor for score on quadratic component
+  Extractor for score on quadratic component
 }
 \section{Details}{
 

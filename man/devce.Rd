@@ -1,6 +1,6 @@
 \name{devce}
 \alias{devce}
-\title{extractor for score on: deviation of rem from x-section mean}
+\title{Extractor for score on: deviation of rem from x-section mean}
 \usage{
   devce(x, ret)
 }
@@ -13,7 +13,7 @@
   matrix
 }
 \description{
-  extractor for score on: deviation of rem from x-section
+  Extractor for score on: deviation of rem from x-section
   mean
 }
 \section{Details}{

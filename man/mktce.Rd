@@ -1,6 +1,6 @@
 \name{mktce}
 \alias{mktce}
-\title{extractor for market component of return (factor 1)}
+\title{Extractor for market component of return (factor 1)}
 \usage{
   mktce(x, ret)
 }
@@ -13,7 +13,7 @@
   matrix of attributed return
 }
 \description{
-  extractor for market component of return (factor 1)
+  Extractor for market component of return (factor 1)
 }
 \section{Details}{
 

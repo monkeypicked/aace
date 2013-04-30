@@ -1,6 +1,6 @@
 \name{face}
 \alias{face}
-\title{returns decomposed by all factors 1:k, + residual, + quadratic}
+\title{Returns decomposed by all factors 1:k, + residual, + quadratic}
 \usage{
   face(x, ret)
 }
@@ -13,7 +13,7 @@
   named list of attributed return: 1:k, ret, rer, qua
 }
 \description{
-  returns decomposed by all factors 1:k, + residual, +
+  Returns decomposed by all factors 1:k, + residual, +
   quadratic
 }
 \section{Details}{

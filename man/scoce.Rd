@@ -1,6 +1,6 @@
 \name{scoce}
 \alias{scoce}
-\title{scores}
+\title{Scores}
 \usage{
   scoce(x, ret, type = c("fmp", "hpl"))
 }
@@ -15,7 +15,7 @@
   scores
 }
 \description{
-  scores
+  Scores
 }
 \section{Details}{
 

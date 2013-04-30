@@ -1,6 +1,6 @@
 \name{buice}
 \alias{buice}
-\title{identifiers (all)}
+\title{Extractor for identifiers (all)}
 \usage{
   buice(x)
 }
@@ -11,7 +11,7 @@
   identifiers : colnames from original data
 }
 \description{
-  identifiers (all)
+  Extractor for identifiers (all)
 }
 \section{Details}{
 

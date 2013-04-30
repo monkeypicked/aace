@@ -1,6 +1,6 @@
 \name{prdce}
 \alias{prdce}
-\title{portfolio risk decomposition}
+\title{Portfolio risk decomposition}
 \usage{
   prdce(x = getce(), po = poce(x), scaletovol = FALSE,
     security = FALSE)
@@ -23,7 +23,7 @@
   vol
 }
 \description{
-  portfolio risk decomposition
+  Portfolio risk decomposition
 }
 \section{Details}{
 

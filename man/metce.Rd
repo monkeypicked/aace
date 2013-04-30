@@ -1,6 +1,6 @@
 \name{metce}
 \alias{metce}
-\title{method}
+\title{Extractor for method}
 \usage{
   metce(x)
 }
@@ -11,7 +11,7 @@
   method
 }
 \description{
-  method
+  Extractor for method
 }
 \section{Details}{
 

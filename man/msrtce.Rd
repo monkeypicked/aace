@@ -1,6 +1,6 @@
 \name{msrtce}
 \alias{msrtce}
-\title{extractor for components Market, Systematic, Residual, Total}
+\title{Extractor for components Market, Systematic, Residual, Total}
 \usage{
   msrtce(x, ret)
 }
@@ -13,7 +13,7 @@
   matrix of attributed return
 }
 \description{
-  extractor for components Market, Systematic, Residual,
+  Extractor for components Market, Systematic, Residual,
   Total
 }
 \section{Details}{

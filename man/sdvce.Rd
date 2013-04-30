@@ -1,6 +1,6 @@
 \name{sdvce}
 \alias{sdvce}
-\title{standard deviation}
+\title{Extractor for standard deviation}
 \usage{
   sdvce(x)
 }
@@ -11,7 +11,7 @@
   standard deviation (vol)
 }
 \description{
-  standard deviation
+  Extractor for standard deviation
 }
 \section{Details}{
 

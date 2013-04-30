@@ -1,6 +1,6 @@
 \name{genfrdce}
 \alias{genfrdce}
-\title{factor risk decomposition by security}
+\title{Factor risk decomposition by security}
 \usage{
   genfrdce(x = getce())
 }
@@ -12,7 +12,7 @@
   factors 1:k)
 }
 \description{
-  factor risk decomposition by security
+  Factor risk decomposition by security
 }
 \section{Details}{
 

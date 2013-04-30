@@ -1,6 +1,6 @@
 \name{msce}
 \alias{msce}
-\title{extractor for components Market+Systematic}
+\title{Extractor for components Market+Systematic}
 \usage{
   msce(x, ret)
 }
@@ -13,7 +13,7 @@
   matrix of attributed return
 }
 \description{
-  extractor for components Market+Systematic
+  Extractor for components Market+Systematic
 }
 \section{Details}{
 

@@ -1,6 +1,6 @@
 \name{vcvce}
 \alias{vcvce}
-\title{extractor for covariance matrix}
+\title{Extractor for covariance matrix}
 \usage{
   vcvce(x, out = c("M", "S", "R", "T"),
     units = c("variance", "correlation"), po = buice(x))
@@ -19,7 +19,7 @@
   named list of the components specified in argument: out
 }
 \description{
-  extractor for covariance matrix
+  Extractor for covariance matrix
 }
 \section{Details}{
   po is a vector of identifiers, a subset of the original

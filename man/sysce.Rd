@@ -1,6 +1,6 @@
 \name{sysce}
 \alias{sysce}
-\title{extractor for systematic component of return (factors 2:k)}
+\title{Extractor for systematic component of return (factors 2:k)}
 \usage{
   sysce(x, ret)
 }
@@ -13,7 +13,7 @@
   matrix of attributed return
 }
 \description{
-  extractor for systematic component of return (factors
+  Extractor for systematic component of return (factors
   2:k)
 }
 \section{Details}{

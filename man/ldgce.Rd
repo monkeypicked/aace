@@ -1,6 +1,6 @@
 \name{ldgce}
 \alias{ldgce}
-\title{extractor for loadings}
+\title{Extractor for loadings}
 \usage{
   ldgce(x, type = c("fmp", "hpl"))
 }
@@ -11,7 +11,7 @@
   loadings matrix
 }
 \description{
-  extractor for loadings
+  Extractor for loadings
 }
 \section{Details}{
 

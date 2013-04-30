@@ -1,6 +1,6 @@
 \name{fulce}
 \alias{fulce}
-\title{identifiers of columns with no NA (full data)}
+\title{Extractor for identifiers of columns with no NA (full data)}
 \usage{
   fulce(x)
 }
@@ -11,7 +11,8 @@
   identifiers
 }
 \description{
-  identifiers of columns with no NA (full data)
+  Extractor for identifiers of columns with no NA (full
+  data)
 }
 \section{Details}{
 

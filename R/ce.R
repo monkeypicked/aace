@@ -266,21 +266,13 @@
     class(ans) <- "ce"
     ans
 }
-#addq-----------------------------------
-##' utility - adds a column (x[,1]-mean(x[,1]))**2
-##' 
-##' @param x matrix
-##' @return matrix with added column
-##' @section Details: 
-##' @author Giles Heywood 
-##' @family internals
 `addq` <- function(x)
 {
     stopifnot(is.matrix(x))
     cbind(x,(x[,1,drop=FALSE]-mean(x[,1,drop=FALSE],na.rm=TRUE))**2)
 }
 #vcvce-----------------------------------
-##' extractor for covariance matrix
+##' Extractor for covariance matrix
 ##' 
 ##' @param x object of class ce
 ##' @param out component to return: M=factor1, S=factors 2:k, R=residual, T=M+S+R
@@ -309,7 +301,7 @@
     r
 }
 #ldggmace-----------------------------------
-##' extractor for loadings * fmp, (colnames=T, rownames=T)
+##' Extractor for loadings * fmp, (colnames=T, rownames=T)
 ##' 
 ##' @param x object of class ce
 ##' @return named list(M,S,R)
@@ -326,7 +318,7 @@
     r
 }
 #vfuce-----------------------------------
-##' convenience wrapper on vcvce(x)$T -the total covariance estimate for columns with full history
+##' Convenience wrapper on vcvce(x)$T -the total covariance estimate for columns with full history
 ##' 
 ##' @param x object of class ce
 ##' @return VCV matrix
@@ -339,7 +331,7 @@
     vcvce(x)$T[x$full,x$full]
 }
 #ldgce-----------------------------------
-##' extractor for loadings
+##' Extractor for loadings
 ##' 
 ##' @param x object of class ce
 ##' @return loadings matrix
@@ -353,20 +345,12 @@
     if(type=="fmp") {ldg <- x$loadings} else {ldg <- abs(x$loadings)}    
     ldg*as.numeric(x$sdev)
 }
-#pococe-----------------------------------
-##' extractor for poco
-##' 
-##' @param x object of class ce
-##' @return matrix
-##' @section Details: 
-##' @author Giles Heywood 
-##' @family internals
 `pococe` <- function(x){
     stopifnot(is(x,"ce"))
     x$poco
 }
 #quace-----------------------------------
-##' extractor for score on quadratic component
+##' Extractor for score on quadratic component
 ##' 
 ##' @param x object of class ce
 ##' @param ret returns matrix
@@ -380,7 +364,7 @@
     mz((scoce(x,ret)[,1,drop=FALSE]**2) %*% t(x$qua)*as.numeric(x$sdev))
 }
 #devce-----------------------------------
-##' extractor for score on: deviation of rem from x-section mean
+##' Extractor for score on: deviation of rem from x-section mean
 ##' 
 ##' @param x object of class ce
 ##' @param ret returns matrix
@@ -395,7 +379,7 @@
     xx-apply(xx,1,mean,na.rm=TRUE)
 }
 #mktce-----------------------------------
-##' extractor for market component of return (factor 1)
+##' Extractor for market component of return (factor 1)
 ##' 
 ##' @param x object of class ce
 ##' @param ret returns matrix
@@ -409,7 +393,7 @@
     mz(scoce(x,ret)[,1,drop=FALSE]%*%t(ldgce(x)[,1,drop=FALSE]))
 }
 #sysce-----------------------------------
-##' extractor for systematic component of return (factors 2:k)
+##' Extractor for systematic component of return (factors 2:k)
 ##' 
 ##' @param x object of class ce
 ##' @param ret returns matrix
@@ -423,7 +407,7 @@
     mz(scoce(x,ret)[,-1,drop=FALSE]%*%t(ldgce(x)[,-1,drop=FALSE]))
 }
 #msrtce-----------------------------------
-##' extractor for components Market, Systematic, Residual, Total
+##' Extractor for components Market, Systematic, Residual, Total
 ##' 
 ##' @param x object of class ce
 ##' @param ret returns matrix
@@ -444,7 +428,7 @@
         )
 }
 #msce-----------------------------------
-##' extractor for components Market+Systematic
+##' Extractor for components Market+Systematic
 ##' 
 ##' @param x object of class ce
 ##' @param ret returns matrix
@@ -479,7 +463,7 @@
     list(remnor=mz(M),resnor=mz(S),rernor=mz(R),retnor=mz(T))
 }
 #face-----------------------------------
-##' returns decomposed by all factors 1:k, + residual, + quadratic
+##' Returns decomposed by all factors 1:k, + residual, + quadratic
 ##' 
 ##' @param x object of class ce
 ##' @param ret returns matrix
@@ -507,7 +491,7 @@
     res
 }
 #fmpce-----------------------------------
-##' factor mimicking portfolio weights (but still in reduced dimension ie non-NA columns only)
+##' Factor mimicking portfolio weights (but still in reduced dimension ie non-NA columns only)
 ##' 
 ##' @param x object of class ce
 ##' @param type fmp for factor portfolio weights
@@ -526,7 +510,7 @@
     }
 }
 #metce-----------------------------------
-##' method
+##' Extractor for method
 ##' 
 ##' @param x object of class ce
 ##' @return method
@@ -540,7 +524,7 @@
     x$method
 }
 #scoce-----------------------------------
-##' scores
+##' Scores
 ##' 
 ##' @param x object of class ce
 ##' @param ret returns
@@ -558,7 +542,7 @@
     mz(coredata(ret)[,fulce(x),drop=FALSE]%*%coredata(fmp)[fulce(x),,drop=FALSE])
 }
 #resce-----------------------------------
-##' residual return
+##' Residual return
 ##' 
 ##' @param x object of class ce
 ##' @param ret returns
@@ -572,7 +556,7 @@
     mz(ret-scoce(x,ret)%*%t(ldgce(x)))
 }
 #spvce-----------------------------------
-##' specific vol
+##' Extractor for pecific vol
 ##' 
 ##' @param x object of class ce
 ##' @return specific vol
@@ -585,7 +569,7 @@
     x$sdev*sqrt(x$uniqueness)
 }
 #sdvce-----------------------------------
-##' standard deviation
+##' Extractor for standard deviation
 ##' 
 ##' @param x object of class ce
 ##' @return standard deviation (vol)
@@ -598,7 +582,7 @@
     x$sdev
 }
 #unqce-----------------------------------
-##' uniqueness
+##' Extractor for uniqueness
 ##' 
 ##' @param x object of class ce
 ##' @section Details: 
@@ -610,7 +594,7 @@
     x$uniqueness
 }
 #fulce-----------------------------------
-##' identifiers of columns with no NA (full data)
+##' Extractor for identifiers of columns with no NA (full data)
 ##' 
 ##' @param x object of class ce
 ##' @return identifiers
@@ -623,7 +607,7 @@
     rownames(x$full)[x$full]
 }
 #buice-----------------------------------
-##' identifiers (all)
+##' Extractor for identifiers (all)
 ##' 
 ##' @param x object of class ce
 ##' @return identifiers : colnames from original data
@@ -636,7 +620,7 @@
     rownames(x$full) #sort(rownames(x$full))
 }
 #prdce-----------------------------------
-##' portfolio risk decomposition
+##' Portfolio risk decomposition
 ##' 
 ##' @param x object of class ce
 ##' @param po column matrix of portfolio weights with rownames=identifiers
@@ -673,7 +657,7 @@
     matrix(c(M,S,R,TOT,F1),n,5,dimnames=list(bui,c("vam","vas","var","vat","f1")))
 }
 #genfrdce-----------------------------------
-##' factor risk decomposition by security
+##' Factor risk decomposition by security
 ##' 
 ##' @param x object of class ce
 ##' @return matrix, rows=security, columns = (total, residual, factors 1:k)
@@ -688,13 +672,4 @@
     rownames(va) <- rownames(x$loadings)
     va
 }
-#buialigned-----------------------------------
-##' utility
-##' 
-##' @param x object of class ce
-##' @param ret return matrix
-##' @return validity
-##' @section Details: 
-##' @author Giles Heywood 
-##' @family internals
 `buialigned` <- function(x,ret) { all(colnames(ret)==rownames(x$loadings)) }
