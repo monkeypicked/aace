@@ -31,7 +31,8 @@
     minunique=0.02,         #minunique=0 for PB original
     shrinkb=0.3,            #factor 1 shrinkage to mean, shrink=1 for equal factor 1 loadings
     shrinkv=shrinkb,        #vol shrinkage to mean
-    shrinkr=0.9             #regressed loadings shrinkage to mean
+    shrinkr=0.9,             #regressed loadings shrinkage to mean
+    ...
     ) {     
     fun.copyright <- "Placed in the public domain in 2006 by Burns Statistics"
     fun.version <- "factor.model.stat 006"
