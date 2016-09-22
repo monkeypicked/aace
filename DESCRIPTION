@@ -9,3 +9,4 @@ Description: Covariance estimation using modified PCA, based on BurStFin
 License: GPL (>=2)
 Collate:
     'ce.R'
+RoxygenNote: 5.0.1
