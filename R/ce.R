@@ -422,9 +422,9 @@
     if(any(is.na(ret))) coredata(ret)[which(is.na(ret))] <- coredata(msce(ce,natox(ret,0)))[which(is.na(ret))]
     sco <- scoce(x,ret)
     cbind(
-        sco[,1,drop=FALSE]%*%t(ldgce(x)[,1,drop=FALSE]),
-        sco[,-1,drop=FALSE]%*%t(ldgce(x)[,-1,drop=FALSE]),
-        ret-sco%*%t(ldgce(x)),
+        mz(sco[,1,drop=FALSE]%*%t(ldgce(x)[,1,drop=FALSE])),
+        mz(sco[,-1,drop=FALSE]%*%t(ldgce(x)[,-1,drop=FALSE])),
+        ret-mz(sco%*%t(ldgce(x))),
         ret
         )
 }
