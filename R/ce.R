@@ -422,11 +422,14 @@
     if(any(is.na(ret))) coredata(ret)[which(is.na(ret))] <- coredata(msce(ce,natox(ret,0)))[which(is.na(ret))]
     sco <- scoce(x,ret)
     cbind(
-        sco[,1,drop=FALSE]%*%t(ldgce(x)[,1,drop=FALSE]),
-        sco[,-1,drop=FALSE]%*%t(ldgce(x)[,-1,drop=FALSE]),
-        ret-sco%*%t(ldgce(x)),
-        ret
-        )
+      zoo(sco[, 1, drop = FALSE] %*% t(ldgce(x)[, 1, drop = FALSE]),index(sco))
+      , 
+      zoo(sco[, -1, drop = FALSE] %*% t(ldgce(x)[, -1, drop = FALSE]),index(sco))
+      , 
+      mz(ret - sco %*% t(ldgce(x)))
+      , 
+      mz(ret)
+    )
 }
 #msce-----------------------------------
 ##' Extractor for components Market+Systematic
